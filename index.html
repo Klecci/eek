@@ -1,7 +1,7 @@
 <html lang="en">
 <head>	
     <meta charset="UTF-8">	
-    <title>CSS <textarea name="my text" id="" cols="30" rows="10"></textarea></title>	
+    <title>Klecci CV</title>	
     <style>	
         h2{color:	
         rgb(250, 3, 3)}</style>	
@@ -224,55 +224,21 @@
         <div class="container">	
           <form action="/action_page.php">	
             <label for="Name">Name</label>	
-            <input type="text" id="name" name="Name" placeholder="Your Name..">	
+            <input type="text" id="name" minlength="4" name="Name" placeholder="Your Name..">	
 
             <label for="E-mail">E-mail</label>	
-            <input type="text" id="email" name="email" placeholder="Your E-mail..">	
+            <input type="email" id="email" name="email" placeholder="Your E-mail..">	
 
             <label for="Title">Title</label>	
             <input type="text" id="Title" name="Title" placeholder="Title">	
             </select>	
 
             <label for="subject">Message</label>	
-            <textarea id="Message" name="Message" placeholder="Write something.." style="height:80px"></textarea>	
+            <textarea id="Message" minlength="20" name="Message" placeholder="Write something.." style="height:80px"></textarea>	
 
             <input type="submit" value="Submit">	
           </form>	
-        </div>	
-        <script>                          	
-        { 	
-            var name = document.forms["ContactForm"]["Name"];  	
-            var phone = document.forms["ContactForm"]["Title"];             	
-            var email = document.forms["ContactForm"]["EMail"];  	
-
-            if (name.value == "")                                  	
-            { 	
-                window.alert("Please enter your name."); 	
-                name.focus(); 	
-                return false; 	
-            } 	
-
-            if (email.value == "")                                   	
-            { 	
-                window.alert("Please enter a valid e-mail address."); 	
-                email.focus(); 	
-                return false; 	
-            } 	
-
-            if (email.value.indexOf("@", 0) < 0)                 	
-            { 	
-                window.alert("Please enter a valid e-mail address."); 	
-                email.focus(); 	
-                return false; 	
-            } 	
-
-            if (email.value.indexOf(".", 0) < 0)                 	
-            { 	
-                window.alert("Please enter a valid e-mail address."); 	
-                email.focus(); 	
-                return false; 	
-            }	
-            </script> 	
+        </div>		
 
         <style> 	
          div {  	
